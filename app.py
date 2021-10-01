@@ -1,6 +1,6 @@
 import streamlit as st
 import joblib
-model=joblib.load('spam_ham')
+model=joblib.load('Email_spam-ham_detection')
 st.title('Spam Ham Classifier')
 ip=st.text_input('Enter the message')
 op=model.predict([ip])
